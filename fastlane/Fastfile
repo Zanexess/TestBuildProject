@@ -29,8 +29,8 @@ platform :android do
   lane :dev do
     gradle(task: "clean assembleRelease")
     crashlytics(
-        api_token: ENV['CRASHLYTICS_API_TOKEN'],
-        build_secret: ENV['CRASHLYTICS_SECRET']
+        api_token: "159e3e7115f9e8a7b608a3f24b5787f02695f1a5",
+        build_secret: "255678efbaf99bb9a9ac34645c724e3797f210520d8e9a218b39dd1abee90cd6"
     )
 
     # sh "your_script.sh"
